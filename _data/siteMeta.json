@@ -1,11 +1,11 @@
 {
   "url": "https://arpit.tk",
-  "description": "The personal website of Arpit Batra, a software developer and hobbyist writer.",
+  "description": "The research notebook of Luke Lacaria.",
+  "title": "Research Notebook",
   "author": {
-    "name": "Arpit Batra",
-    "email": "arpitbatra123@gmail.com",
-    "twitter": "https://twitter.com/arpitbatra123",
-    "github": "https://github.com/arpitbatra123"
+    "name": "Luke Lacaria",
+    "email": "lukelacaria@gmail.com",
+    "github": "https://github.com/lukel43"
   },
   "feedUrl": "/feed.xml",
   "navbarData": [
