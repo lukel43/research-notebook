@@ -1,0 +1,31 @@
+{
+  "name": "eleventy-blog",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "scripts": {
+    "build": "eleventy && npm run sass && npx prettier --write _site",
+    "serve": "npm run clean && concurrently --success all 'eleventy --serve' 'npm run sass:watch'",
+    "sass": "sass styles:_site/styles --no-source-map --style=compressed --update",
+    "sass:watch": "npm run sass && npm run sass -- --watch",
+    "clean": "rm -rf _site/*",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "npx prettier --write .",
+    "lint:scss": "stylelint '**/*.scss' "
+  },
+  "keywords": [],
+  "author": "Arpit Batra (arpitbatra123@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-cache-assets": "^2.3.0",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "concurrently": "^7.6.0",
+    "eleventy-plugin-embed-twitter": "^1.3.4",
+    "markdown-it-attrs": "^4.1.4",
+    "markdown-it-image-lazy-loading": "^1.2.0",
+    "sass": "^1.56.1",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^6.1.0"
+  }
+}

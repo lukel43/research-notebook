@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ title }}</title>
+
+    <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ siteMeta.author.name }}" />
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="{{ title }}" />
+    <meta name="description" content="{{ title }}" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ title }}, A post by {{ siteMeta.author.name }}" />
+    <meta property="og:image" content="{{ siteMeta.url }}/assets/images/profile.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="{{ title }}" />
+    <meta property="twitter:description" content="{{ title }}, A post by {{ siteMeta.author.name }}" />
+    <meta property="twitter:image" content="{{ siteMeta.url }}/assets/images/profile.png" />
+
+    <link rel="stylesheet" href="../../styles/blogpost.css" />
+
+    <!-- Analytics -->
+    <script async src="https://cdn.splitbee.io/sb.js"></script>
+  </head>
+
+  <body>
+    <div class="page-wrapper | blogpost-container">
+      <header>
+        <h1 class="lowercase | heading-font | name"><a href='/'>{{ siteMeta.author.name }}</a></h1>
+        <h1 class="lowercase | heading-font | post-title">{{ title }}</h1>
+        <span class="heading-font | post-date">{{ date | date: '%b %d %Y' }}</span>
+      </header>
+      <div class="content-container">
+        <main>
+          <article class="flow | body-font | post-content">
+            {{ content }}
+          </article>
+        </main>
+        <nav>
+          {% for item in siteMeta.navbarDataBlog %}
+          <a href="{{ item.url }}" class="heading-font | nav-item">{{ item.text }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+      <footer>
+        <a class="body-font | home-link" href="/"> ← Go Home</a>
+        {% include 'social-links' %}
+      </footer>
+    </div>
+  </body>
+</html>

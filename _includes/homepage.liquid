@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ siteMeta.author.name }}" />
+
+    <!-- Primary Meta Tags -->
+    <title>{{ siteMeta.author.name }}</title>
+    <meta name="title" content="{{ siteMeta.author.name }}" />
+    <meta name="description" content="{{ siteMeta.description }}" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ siteMeta.url }}/" />
+    <meta property="og:title" content="{{ siteMeta.author.name }}" />
+    <meta property="og:description" content="{{ siteMeta.description }}" />
+    <meta property="og:image" content="{{ siteMeta.url }}/assets/images/profile.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{ siteMeta.url }}/" />
+    <meta property="twitter:title" content="{{ siteMeta.author.name }}" />
+    <meta property="twitter:description" content="{{ siteMeta.description }}" />
+    <meta property="twitter:image" content="{{ siteMeta.url }}/assets/images/profile.png" />
+
+    <!-- Icons -->
+    <!-- Todo: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Preconnect to google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles/homepage.css" />
+
+    <!-- Analytics -->
+    <script async src="https://cdn.splitbee.io/sb.js"></script>
+  </head>
+
+  <body>
+    <div class="page-wrapper | homepage-container">
+      <header>
+        <h1 class="lowercase | heading-font | name">{{ siteMeta.author.name }}</h1>
+      </header>
+      <div class="content-container">
+        <main>
+          <article class="flow | body-font | about-me">
+            {{ content }}
+          </article>
+        </main>
+        <nav>
+          {% for item in siteMeta.navbarData %}
+          <a href="{{ item.url }}" class="heading-font | nav-item">{{ item.text }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+      <footer>
+        {% include 'social-links' %}
+        <a
+          href="https://lands-upon.netlify.app/"
+          class="heading-font | collections-link | lands-upon"
+          target="_blank"
+          rel="noopener"
+        >
+          lands upon
+        </a>
+        <a
+          href="https://inspo-arpit.vercel.app/"
+          class="heading-font | collections-link"
+          target="_blank"
+          rel="noopener"
+        >
+          inspo
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

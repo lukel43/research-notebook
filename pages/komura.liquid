@@ -1,0 +1,94 @@
+---
+permalink: komura/index.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arpit Batra's Komura</title>
+    <link rel="stylesheet" href="../styles/komura.css" />
+
+    <!-- Courtesy of https://metatags.io/ -->
+    <!-- Primary Meta Tags -->
+    <title>Arpit Batra's Komura</title>
+    <meta name="title" content="Arpit Batra's Komura" />
+    <meta name="description" content="The personal digital library of Arpit Batra." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arpit.tk/komura" />
+    <meta property="og:title" content="Arpit Batra's Komura" />
+    <meta property="og:description" content="The personal digital library of Arpit Batra." />
+    <meta property="og:image" content="https://arpit.tk/assets/images/komura-og.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://arpit.tk/komura" />
+    <meta property="twitter:title" content="Arpit Batra's Komura" />
+    <meta property="twitter:description" content="The personal digital library of Arpit Batra." />
+    <meta property="twitter:image" content="https://arpit.tk/assets/images/komura-og.png" />
+
+    <!-- RSS -->
+    <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ siteMeta.author.name }}" />
+  </head>
+  <body>
+    <header>
+      <div class="komura-title">
+        <h1 class="heading-font | komura-title-text">arpit's komura</h1>
+        <a
+          aria-label="About Komura"
+          href="https://www.wochikochi.jp/english/relayessay/2013/06/haruki-kafka.php"
+          class="komura-about-link"
+          target="_blank"
+          rel="noopener">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-external-link"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="tomato"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+            <line x1="10" y1="14" x2="20" y2="4" />
+            <polyline points="15 4 20 4 20 9" />
+          </svg>
+        </a>
+      </div>
+      <p class="body-font | komura-description">
+        Hey There! You have arrived in my personal digital library. Here you will find the books I’ve read and reviewed
+        on <a href="https://goodreads.com/arpitbatra123">goodreads</a>.
+      </p>
+    </header>
+    <main class="body-font | komura">
+      <div class="books">
+        {% for review in reviews.data %}
+        <div class="book">
+          <div class="book-cover">
+            {{ review.book.photoUrl }}
+          </div>
+          <div class="book-meta">
+            <h2 class="heading-font | book-title">
+              {{ review.book.title }}
+            </h2>
+            <p class="book-review">
+              {{ review.review.body }}
+            </p>
+            <div class="review-date">{{ review.review.date_read | date: '%b %Y' }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <footer>
+        <p class="komura-description">That's all for now. Go back <a href="/">home</a>.</p>
+      </footer>
+    </main>
+  </body>
+</html>
