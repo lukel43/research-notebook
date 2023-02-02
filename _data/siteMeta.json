@@ -5,17 +5,18 @@
   "author": {
     "name": "Luke Lacaria",
     "email": "lukelacaria@gmail.com",
-    "github": "https://github.com/lukel43"
+    "github": "https://github.com/lukel43",
+    "linkedin": "https://www.linkedin.com/in/luke-lacaria/"
   },
   "feedUrl": "/feed.xml",
   "navbarData": [
     {
-      "text": "blog",
-      "url": "/blog"
+      "text": "notes",
+      "url": "/notes"
     },
     {
-      "text": "reading",
-      "url": "/komura"
+      "text": "sources",
+      "url": "/sources"
     }
   ],
   "navbarDataBlog": [
@@ -24,8 +25,8 @@
       "url": "/"
     },
     {
-      "text": "reading",
-      "url": "/komura"
+      "text": "sources",
+      "url": "/sources"
     }
   ]
 }
