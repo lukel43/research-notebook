@@ -1,7 +1,7 @@
 ---
 title: SMART methodology for selection of a Blockchain platform to develop upon
 date: 2023-01-02
-tags: []
+tags: [posts]
 ---
 
 * Simple Multi Attribute Rating Technique

@@ -17,6 +17,10 @@
     {
       "text": "sources",
       "url": "/sources"
+    },
+    {
+      "text": "keywords",
+      "url": "/keywords"
     }
   ],
   "navbarDataBlog": [
@@ -27,6 +31,10 @@
     {
       "text": "sources",
       "url": "/sources"
+    },
+    {
+      "text": "keywords",
+      "url": "/keywords"
     }
   ]
 }

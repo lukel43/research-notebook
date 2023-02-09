@@ -1,7 +1,7 @@
 ---
 title: Current blockchain applications for software engineering
 date: 2023-01-02
-tags: []
+tags: [posts]
 ---
 
 Proposals have been made to use blockchain to create a decentralized CI platform, and allow open source contributors to be paid for their work by meeting deliverables.
