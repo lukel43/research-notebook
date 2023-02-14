@@ -4,7 +4,7 @@ date: 2023-02-14
 tags: [keywords]
 ---
 
-** Cryptocurrency
+* Cryptocurrency
 * Blockchain
 * Blockchain Based Systems (BBS)
 * Oracles
