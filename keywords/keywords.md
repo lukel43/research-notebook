@@ -4,6 +4,12 @@ date: 2023-02-14
 tags: [keywords]
 ---
 
+* Sports betting
+* Sports betting arbitrage
+* Sports betting hedge
+* Sports betting algorithms
+* Algorithmic betting
+* Sports betting API
 * Cryptocurrency
 * Blockchain
 * Blockchain Based Systems (BBS)
