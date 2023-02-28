@@ -17,7 +17,7 @@ This will enable the users to have the information readily available to decreasi
 To answer this question my app will allow alerts based on a desired arbitrage profit threshold (ex. 10%, 25%, 50%). Then I will conduct research based on past odds and results to determine which strategy would have been most successful historically. This will result in more information about the viability of arbitrage betting strategies as well as people's willingness to seize these guarenteed profit opportunities at the risk of missing out on possible additional profits.
 
 Sources:
-https://core.ac.uk/download/pdf/6576725.pdf
-https://pubsonline.informs.org/doi/epdf/10.1287/mnsc.2016.2656
-https://www.mdpi.com/2227-9091/8/3/88
-https://the-odds-api.com/
+[https://core.ac.uk/download/pdf/6576725.pdf](https://core.ac.uk/download/pdf/6576725.pdf)
+[https://pubsonline.informs.org/doi/epdf/10.1287/mnsc.2016.2656](https://pubsonline.informs.org/doi/epdf/10.1287/mnsc.2016.2656)
+[https://www.mdpi.com/2227-9091/8/3/88](https://www.mdpi.com/2227-9091/8/3/88)
+[https://the-odds-api.com/](https://the-odds-api.com/)
